@@ -2,13 +2,13 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css">
-        <title>Collaborative todo list</title>
+        <title>Collaborative Hiring Process Managment</title>
     </head>
     
     <body>
         <section class="todoapp">
             <header class="header">
-                <h1>todos</h1>
+                <h1>Hiring Management</h1>
                 <input class="new-todo"
                     autofocus autocomplete="off"
                     placeholder="What needs to be done?"
@@ -25,6 +25,8 @@
                         :class="{ completed: todo.completed, editing: todo == editedTodo }">
                         <div class="view">
                             <input class="toggle" type="checkbox" v-model="todo.completed" @change="completeChanged(todo)">
+                            <input class="toggle1" type="checkbox" v-model="todo.completed" @change="completeChanged(todo)">
+                            <input class="toggle2" type="checkbox" v-model="todo.completed" @change="completeChanged(todo)">
                             <label @dblclick="editTodo(todo)">{{ todo.title }}</label>
                             <button class="destroy" @click="removeTodo(todo)"></button>
                         </div>
@@ -53,13 +55,10 @@
         </section>
         <footer class="info">
           <p>Double-click to edit a todo</p>
-          <p>Written by <a href="http://evanyou.me">Evan You</a></p>
-          <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
         </footer>
         
         
-        <script src="vue.js" type="application/javascript"></script>
-        <!--<script src="C:\git\emitter-javascript\build\emitter.js" type="text/javascript"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js" type="application/javascript"></script>
         <script src="https://s3-eu-west-1.amazonaws.com/cdn.emitter.io/js/emitter.js" type="text/javascript"></script>
         <script src="app.visitor.js" type="text/javascript"></script>
         <script src="app.js" type="application/javascript"></script>

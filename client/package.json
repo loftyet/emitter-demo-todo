@@ -1,0 +1,26 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "todos",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "npm install && node build/dev-server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
